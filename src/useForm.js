@@ -19,7 +19,7 @@ const useForm = callback => {
       return callback(searchTerm);
     }
   }, [callback, isSubmitting, searchTerm]);
-  return { handleSubmit, handleChange };
+  return { handleSubmit, handleChange, searchTerm };
 };
 
 export default useForm;
