@@ -11,10 +11,8 @@ const Articles = searchTerm => {
       <ul>
         {items.map(item => (
           <li key={item.title}>
-            <a href={item.url}>
-              {item.title}
-              {item.page}
-            </a>
+            <a href={item.url}>{item.title}</a>
+            <span>{item.page}</span>
           </li>
         ))}
       </ul>

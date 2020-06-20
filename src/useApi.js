@@ -13,12 +13,12 @@ const useApi = term => {
     const getData = async () => {
       try {
         const res = await Axios(
-          `https://newsapi.org/v2/everything?qInTitle=${searchTerm}&apiKey=${ApiKey}`
+          `https://newsapi.org/v2/everything?qInTitle=${searchTerm}&pageSize=10&page=1&apiKey=${ApiKey}`
         );
-        console.log("response: ", res);
+        console.log(res);
         setItems(res.data.articles);
       } catch (error) {
-        console.log(error.msg);
+        setError(error.msg);
       }
     };
     getData();
