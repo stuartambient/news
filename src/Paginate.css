@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.pag-backward,
+.pag-forward {
+  font-size: 1.8em;
+}
+
+.pag-backward:hover,
+.pag-forward:hover {
+  cursor: pointer;
+}
